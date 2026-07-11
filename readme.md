@@ -5,7 +5,7 @@ Reworked version of multi-tools cli Korsa rewritten in 100% Lua
 
 ## Project file structure  :
 
-```bash
+```
   ./Kls (root)
      |
      |_ kls.lua
