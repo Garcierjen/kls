@@ -1,4 +1,8 @@
+-- [ filename: prettytext.lua                                         ]
+-- [ An overcomplicated piece of styling code for your cli -garcierjen]
+
 local m = {}
+local colord = require("colord")
 
 ---wait in second
 ---@param t number
@@ -21,6 +25,24 @@ function m:typewrite(text, time)
         io.flush()
         m:wait(del)
     end
+    io.flush()
+end
+
+--spinning loading from npm
+---@param time number
+function m:spinning(time)
+    local frame = {"⠋", "⠙", "⠹", "⠸", "⠼", "⠴", "⠦", "⠧", "⠇", "⠏"}
+    local del = time / 10
+    colord:cursorinvis()
+    colord:cursaveposDEC()
+    for i, v in ipairs(frame) do
+        colord:curtosaveDEC()
+        io.write(colord:eraseinline()..v)
+        io.flush()
+        m:wait(del)
+    end
+    io.flush()
+    colord:cursorvis()
 end
 
 return m

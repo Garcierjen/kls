@@ -1,5 +1,6 @@
 -- [ note: config for kls -garcierjen ]
 -- [ filename: config.lua ] 
+-- DO NOT OBFUSCATE OR COMPILE TO LUAC
 
 local m = {}
 

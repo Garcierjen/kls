@@ -4,7 +4,7 @@
 -- [ support: Originally written for unix or unix-like OS, but     ]
 -- [          can be port to other OS.                             ]
 -- [                                                               ]
--- [ colord.lua                                                    ]
+-- [ filename: colord.lua                                          ]
 -- this is just aliasing stuff
 -- [ more info: https://gist.github.com/ConnerWill/d4b6c776b509add763e17f9f113fd25b ]
 
@@ -138,20 +138,19 @@ function m:erasesavedL()
     io.flush()
 end
 
-
+---@return any
 function m:eraseinline()
-    io.write(ESC.."[K")
-    io.flush()
+    return ESC.."[K"
 end
 
+---@return any
 function m:erasestartline()
-    io.write(ESC.."[1K")
-    io.flush()
+    return ESC.."[1K"
 end
 
+---@return any
 function m:eraseentireline()
-    io.write(ESC.."[2K")
-    io.flush()
+    return ESC.."[2K"
 end
 
 --[[
@@ -203,6 +202,7 @@ function m:bit16setcolor(colorfg, colorbg, mode, gmode)
         return ESC.."["..g_code.."m"
     elseif mode == "none" then
         io.write('colord:bit16setcolor() : "why?"\n')
+        io.flush()
     end
     return nil
 end
