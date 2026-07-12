@@ -14,7 +14,7 @@ local function main()
     io.write(colord:b256setcolor(155,"fg"))
     prettytext:spinning(5)
     io.write(colord:reset())
-    prettytext:typewrite(colord:b256setcolor(40,"fg").."\nsupercalifragilisticexpialidocious",2)
+    prettytext:typewrite(colord:b256setcolor(40,"fg").."\nsupercalifragilisticexpialidocious\n",2)
     io.write(colord:reset())
     return 0
 end
