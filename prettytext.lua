@@ -32,14 +32,15 @@ end
 ---@param time number
 function m:spinning(time)
     local frame = {"⠋", "⠙", "⠹", "⠸", "⠼", "⠴", "⠦", "⠧", "⠇", "⠏"}
-    local del = time / 10
     colord:cursorinvis()
     colord:cursaveposDEC()
-    for i, v in ipairs(frame) do
-        colord:curtosaveDEC()
-        io.write(colord:eraseinline()..v)
-        io.flush()
-        m:wait(del)
+    for i = 1,time do
+        for i, v in ipairs(frame) do
+            colord:curtosaveDEC()
+            io.write(colord:eraseinline()..v)
+            io.flush()
+            m:wait(1 / 10)
+        end
     end
     io.flush()
     colord:cursorvis()

@@ -212,7 +212,7 @@ function m:b256setcolor(color, mode)
     if mode == "fg" and color <= 255 then
         return ESC.."[38;5;"..color.."m"
     elseif mode == "bg" and color <= 255 then
-        return ESC.."[38;5;"..color.."m"
+        return ESC.."[48;5;"..color.."m"
     end
 end
 

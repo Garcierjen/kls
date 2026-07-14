@@ -14,7 +14,7 @@ local function main()
     prettytext:typewrite(colord:b256setcolor(123, 'fg')..socket._VERSION..colord:reset(), 1)
     io.write(colord:bit16setcolor("margenta","default","fg","normal"))
     prettytext:spinning(10)
-    return 0
+    return 0;
 end
 
 main()

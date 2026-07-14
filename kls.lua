@@ -8,8 +8,10 @@ local prettytext = require("prettytext")
 local socket = require('socket')
 
 local function main()
-    prettytext:typewrite(colord:b256setcolor(123, 'fg').."hello world!\n"..colord:reset(),1)
-    prettytext:typewrite(colord:b256setcolor(123, 'fg')..socket._VERSION..colord:reset(), 1)
+    for i = 1, 256 do
+        io.write(colord:b256setcolor(i-1,"bg").." "..i.." ")
+    end
+    io.write(colord:reset())
     io.write(colord:bit16setcolor("default","default","graphic","bold").."\nkls test : "..colord:reset())
     io.write(colord:b256setcolor(155,"fg"))
     prettytext:spinning(5)
