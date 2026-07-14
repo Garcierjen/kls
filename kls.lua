@@ -9,7 +9,7 @@ local socket = require('socket')
 
 local function main()
     for i = 1, 256 do
-        io.write(colord:b256setcolor(i-1,"bg").." "..i.." ")
+        io.write(colord:b256setcolor(i-1,"bg").." "..tostring(i-1).." ")
     end
     io.write(colord:reset())
     io.write(colord:bit16setcolor("default","default","graphic","bold").."\nkls test : "..colord:reset())
