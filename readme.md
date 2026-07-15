@@ -1,7 +1,7 @@
 # KLS 
-Reworked version of multi-tools cli Korsa rewritten in 100% Lua
+A cli aliasing written in lua
 
-- **Warning** : This tool is written for educational purpose and not for and production uses
+- **Warning** : This is written for educational purpose and not for and production uses
 
 ## Project file structure  :
 
@@ -14,5 +14,5 @@ Reworked version of multi-tools cli Korsa rewritten in 100% Lua
      |
      |_ colord.lua
      |
-     |_ config.lua
+     |_ config.lua --(auto generated)
 ```
