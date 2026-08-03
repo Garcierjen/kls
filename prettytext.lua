@@ -35,7 +35,7 @@ function m:spinning(time)
     colord:cursorinvis()
     colord:cursaveposDEC()
     for i = 1,time do
-        for i, v in ipairs(frame) do
+        for _, v in ipairs(frame) do
             colord:curtosaveDEC()
             io.write(colord:eraseinline()..v)
             io.flush()

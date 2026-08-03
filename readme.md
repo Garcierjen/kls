@@ -16,3 +16,7 @@ A cli aliasing written in lua
      |
      |_ config.lua --(auto generated)
 ```
+
+## Binary Compiling
+
+- This can be done using srlua but luaot is also a great alternative
