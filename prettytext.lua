@@ -1,7 +1,7 @@
 -- [ filename: prettytext.lua                                         ]
 -- [ An overcomplicated piece of styling code for your cli -garcierjen]
 
-local m = {}
+local m = { _VERSION = 1.0}
 local colord = require("colord")
 
 ---wait in second

@@ -8,7 +8,7 @@
 -- this is just aliasing stuff
 -- [ more info: https://gist.github.com/ConnerWill/d4b6c776b509add763e17f9f113fd25b ]
 
-local m = {}
+local m = { _VERSION = 1.0}
 local config = require("config")
 local ESC
 
