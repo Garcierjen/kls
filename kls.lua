@@ -1,6 +1,4 @@
--- [ note: This will get progessively more complex and WILL make alot of technical dev ]
--- [       so please refactor every month or two. -garcierjen                          ]
--- [       kls.lua                                                                     ]
+-- [       kls.lua         ]
 
 local config_content = [[
 -- [ note: config for kls -garcierjen ]
@@ -12,12 +10,6 @@ local m = {}
 
 m.defaultmode = 1 -- [ note: 1 for cli, 2 for tui ]
 
-m.ESC = "Hexadecimal" -- [ note: On different OS have their own ANSI Escape can be change to ]
-                      -- [ "Octal", "Ctrl-Key", "Unicode", "Hexadecimal", "Decimal"          ]
-                      -- ANSI Escape Sequences doc : https://gist.github.com/ConnerWill/d4b6c776b509add763e17f9f113fd25b
-                      -- on unix can be check via echo $COLORTERM or just env and scroll
-                      -- edit if weird
-            
 return m
 ]]
 

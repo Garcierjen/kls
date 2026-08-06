@@ -1,7 +1,7 @@
 # KLS 
-A cli aliasing written in lua
+A lua modules that alias esc code and styling to be more readable
 
-- **Warning** : This is written for educational purpose and not for and production uses
+- **Warning** : This is sucks.
 
 ## Project file structure  :
 
